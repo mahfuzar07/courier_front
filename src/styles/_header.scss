@@ -1,0 +1,227 @@
+.header_area {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 10px 0;
+	background-color: transparent;
+	z-index: 1000;
+	background-color: white;
+	user-select: none;
+	box-shadow: rgba(209, 209, 214, 0.2) 0px 7px 35px 0px;
+	color: $primary_color;
+
+
+	&.visible {
+		transform: translateY(0, 0, 0);
+		transition: all ease 0.7s;
+	}
+
+	&.hidden {
+		transform: translate3d(0, -100%, 0);
+		transition: all ease 0.7s;
+	}
+}
+.header_area .header_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	text-align: center;
+}
+.header_area .header_wrapper .header_logo {
+	max-width: 250px;
+	position: relative;
+	width: 100%;
+	height: 45px;
+	cursor: pointer;
+}
+
+.header_area .header_wrapper .header_navbar_link {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	justify-content: flex-end;
+	.nav-menu-ul {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end !important;
+		gap: 5px;
+		background-color: transparent;
+		flex-wrap: wrap;
+
+		.nav_menu_item {
+			padding: 10px 5px;
+			display: inline-block;
+			position: relative;
+
+			.custom_menu_link {
+				cursor: pointer;
+				font-size: 16px;
+				font-weight: 400;
+				padding: 2px;
+				position: relative;
+
+				&.active {
+					font-weight: 500;
+				}
+			}
+
+			&:hover .nav_submenu_ul {
+				display: block;
+			}
+
+			.nav_submenu_ul {
+				position: absolute;
+				min-width: 550px;
+				max-width: 550px;
+				left: 50%;
+				top: 32px;
+				transform: translateX(-35%);
+				padding-top: 21px;
+				display: none;
+
+				.submenu_list_wrapper {
+					display: grid;
+					grid-template-columns: auto auto;
+					column-gap: 5px;
+					box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+					background-color: white;
+					border-bottom-right-radius: 5px;
+					border-bottom-left-radius: 5px;
+					padding: 0 10px;
+					.sub_menu_item {
+						padding: 8px;
+						display: flex;
+						align-items: flex-start;
+						gap: 10px;
+						cursor: pointer;
+						min-width: 260px;
+						// background-color: red;
+						border-bottom: 1px solid gray;
+						.list_card_image_wrapper {
+							position: relative;
+							min-width: 40px !important;
+							height: 50px;
+						}
+						.list_card_title_wrapper {
+							display: flex;
+							align-items: flex-start;
+							flex-direction: column;
+							justify-content: flex-start;
+							.submenu_title {
+								margin-bottom: 5px;
+								font-size: 13px;
+								font-weight: 500;
+							}
+
+							.submenu_subtitle {
+								margin: 0;
+								font-size: 11px;
+								color: gray;
+								text-align: start;
+								line-height: 14px;
+							}
+						}
+
+						a {
+							&::after {
+								display: none;
+							}
+						}
+
+						&:hover .list_card_title_wrapper {
+							color: $secondary-color !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.header_area .header_wrapper .header_auth_button_wrapper {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.header_area .header_wrapper .responsive_nav_wrapper {
+	display: none;
+}
+
+@media only screen and (max-width: 768px) {
+	.header_area .header_wrapper .header_logo {
+		max-width: 250px;
+		position: relative;
+		width: 100%;
+		height: 30px;
+	}
+	.header_navbar_link,
+	.header_auth_button_wrapper {
+		display: none !important;
+	}
+
+	.responsive_nav_wrapper {
+		display: block !important;
+	}
+
+	.responsive_nav_wrapper .nav_menu_wrapper .nav_language_select_wrapper {
+		margin-top: 30px;
+		select {
+			cursor: pointer;
+			border: none !important;
+			background-color: transparent !important;
+
+			option {
+				color: black !important;
+			}
+		}
+	}
+	.responsive_nav_wrapper .nav_menu_wrapper {
+		position: fixed;
+		left: 0;
+		top: 50px;
+		backdrop-filter: blur(7px);
+		min-width: 100%;
+		min-height: 100vh;
+		transform: translateX(100%);
+		transition: all ease 0.5s;
+	}
+
+	.responsive_nav_wrapper .nav_menu_wrapper_fold {
+		&.nav_menu_wrapper {
+			transform: translateX(0%);
+			transition: all ease 0.5s;
+		}
+	}
+	.responsive_nav_wrapper .nav_menu_wrapper .nav_menu {
+		box-shadow: 0 32px 32px 0 rgba(0, 0, 0, 0.658);
+		max-width: 70%;
+		height: 100vh;
+		background-color: #ffff !important;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		background-color: transparent;
+		margin-left: auto;
+		padding: 5px 10px;
+		.nav_menu_item {
+			padding: 10px;
+
+			&:last-child {
+				margin-top: 10px;
+				padding: 2px 10px;
+				font-size: 14px;
+			}
+			.custom_menu_link {
+				cursor: pointer;
+				font-size: 14px;
+				position: relative;
+
+				&.active {
+					color: red;
+				}
+			}
+		}
+	}
+}
