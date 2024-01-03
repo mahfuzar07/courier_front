@@ -1,6 +1,6 @@
 // URL CONFIG
 export const apiUrl = 'https://api.example.com';
-export const baseUrl = 'http://localhost:3001';
+export const baseUrl = 'http://localhost:3002';
 
 // API CONFIG
 export const apiPrefix = "api";

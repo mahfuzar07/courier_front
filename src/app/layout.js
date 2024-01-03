@@ -2,10 +2,10 @@ import '../styles/style.scss';
 import { metadatas } from '@/data/metadatas';
 import { Providers } from '@/redux/providers';
 import RQProvider from '@/react-query/RQProvider';
-import dynamic from 'next/dynamic';
-// Client Components:
-const Header = dynamic(() => import('@/components/common/header/Header'), { ssr: true });
-const Footer = dynamic(() => import('@/components/common/footer/Footer'), { ssr: true });
+import Header from '@/components/common/header/Header';
+import Footer from '@/components/common/footer/Footer';
+
+
 // Meta Data:
 export const metadata = { ...metadatas };
 
