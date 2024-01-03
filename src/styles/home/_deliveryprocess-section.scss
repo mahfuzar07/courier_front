@@ -4,9 +4,6 @@
 	padding: 80px 0;
 	color: white;
 }
-// .delivery_process_section {
-// 	margin: 20px 0;
-// }
 .delivery_process_item_wrapper {
 	display: flex;
 	align-items: flex-start;
@@ -48,6 +45,7 @@
 			align-items: center;
 			justify-content: center;
 			z-index: 10;
+			filter: drop-shadow(1px 10px 10px #8660f5);
 
 			img {
 				width: 90px;
@@ -83,6 +81,85 @@
 			-webkit-box-orient: vertical;
 			-webkit-transition: ease-in-out all 0.5s;
 			transition: ease-in-out all 0.5s;
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.delivery_process_section_wrapper {
+		margin-top: 20px;
+		background-color: $primary_color;
+		padding: 40px 0;
+		color: white;
+	}
+	.delivery_process_item_wrapper {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 10px;
+		flex-wrap: wrap;
+		position: relative;
+		z-index: 1;
+		&::after {
+			display: none;
+		}
+
+		// background-color: red;
+		.item_card {
+			padding: 10px !important;
+			border-radius: 10px;
+			min-width: 32%;
+			max-width: 32%;
+
+			.card_image_wrapper {
+				position: relative;
+				width: 110px;
+				height: 110px;
+
+				margin: 30px auto;
+				border-radius: 50%;
+				background-color: #6e52c0;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				z-index: 10;
+				filter: drop-shadow(1px 10px 10px #8660f5);
+
+				img {
+					width: 60px;
+					height: 60px;
+					object-fit: contain;
+					object-position: center;
+				}
+			}
+			.card_title {
+				font-size: 22px;
+
+				text-align: center;
+				text-transform: capitalize;
+				font-weight: 500;
+
+				overflow: hidden;
+				display: -webkit-box;
+				-webkit-line-clamp: 1;
+				-webkit-box-orient: vertical;
+				-webkit-transition: ease-in-out all 0.5s;
+				transition: ease-in-out all 0.5s;
+			}
+			.card_description {
+				font-size: 16px;
+				font-weight: 400;
+				text-align: center;
+				margin: 0;
+				line-height: normal;
+				color: rgba(255, 255, 255, 0.7);
+				overflow: hidden;
+				display: -webkit-box;
+				-webkit-line-clamp: 4;
+				-webkit-box-orient: vertical;
+				-webkit-transition: ease-in-out all 0.5s;
+				transition: ease-in-out all 0.5s;
+			}
 		}
 	}
 }

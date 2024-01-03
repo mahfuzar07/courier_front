@@ -1,19 +1,7 @@
-'use client';
-import Image from "next/legacy/image";
+import Image from 'next/image';
+import heroBg from '@/public/assets/hero/hero-image.png';
 
 function HeroSection() {
-	// const [heroSectionData, setHeroSectionData] = useState();
-
-	// const getHeroSectionData = async () => {
-	// 	return await api.get(BaseApiUrl + apiUrl.publicHeroSection).then((response) => {
-	// 		setHeroSectionData(response?.data);
-	// 	});
-	// };
-
-	// useEffect(() => {
-	// 	getHeroSectionData();
-	// }, []);
-
 	return (
 		<div className="hero_section_wrapper">
 			<div className="container">
@@ -30,9 +18,7 @@ function HeroSection() {
 					</div>
 
 					<div className="hero_image_section">
-						<div className="hero_image_wrapper">
-							<Image src="/assets/hero/hero-image.png" alt="Fast Inventory" layout="fill" />
-						</div>
+						<Image quality={100} src={heroBg} alt="Fast Inventory" />
 					</div>
 				</div>
 			</div>
