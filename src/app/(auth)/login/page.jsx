@@ -1,10 +1,11 @@
 'use client';
 
-
 const loginPage = () => {
 	return (
 		<>
-			<div className="">registrationPage</div>
+			<div className="">
+				<div>Login Page</div>
+			</div>
 		</>
 	);
 };
