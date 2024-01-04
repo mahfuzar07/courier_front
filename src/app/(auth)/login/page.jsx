@@ -1,6 +1,6 @@
 'use client';
 
-const loginPage = () => {
+const LoginPage = () => {
 	return (
 		<>
 			<div className="">
@@ -10,4 +10,4 @@ const loginPage = () => {
 	);
 };
 
-export default loginPage;
+export default LoginPage;

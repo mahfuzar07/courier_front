@@ -1,4 +1,4 @@
-export const apiUrl = {
+export const apiEndpoint = {
   signupUrl: "api/user/register",
   getUser: "api/user/get-user",
   signIn: "api/user/login/",

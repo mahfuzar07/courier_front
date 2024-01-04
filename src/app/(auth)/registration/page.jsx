@@ -1,7 +1,7 @@
 'use client';
 
 
-const registrationPage = () => {
+const RegistrationPage = () => {
 	return (
 		<>
 			<div className="">registrationPage</div>
@@ -9,4 +9,4 @@ const registrationPage = () => {
 	);
 };
 
-export default registrationPage;
+export default RegistrationPage;

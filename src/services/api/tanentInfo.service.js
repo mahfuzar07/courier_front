@@ -1,11 +1,17 @@
-import { BaseApiUrl, apiPrefix } from '../../config/config';
 import { api, authApi } from '../interceptor/auth.interceptor';
-import { apiUrl } from '../apiEndpoint';
+import { apiEndpoint } from '../apiEndpoint';
+import { baseUrl } from '@/config/config.example';
 
 class TanentInfoService {
 	static async getTanentInfo() {
-		return await authApi.get(BaseApiUrl + apiUrl.tenantInfo).then((response) => {
+		return await authApi.get(baseUrl + apiEndpoint.tenantInfo).then((response) => {
 			console.log('respons', response);
+			return response?.data;
+		});
+	}
+
+	static async getTanentAdminInfo() {
+		return await authApi.get(baseUrl + apiEndpoint.tenantAdminDashboard).then((response) => {
 			return response?.data;
 		});
 	}

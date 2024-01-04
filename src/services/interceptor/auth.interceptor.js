@@ -14,14 +14,14 @@ const authApi = axios.create({
 authApi.interceptors.request.use(
   async (config) => {
     let accessTokenNew = localStorage.getItem('token');
-  
-    
+
+
     if (!accessTokenNew) {
       if (accessTokenNew) {
-       
+
         accessTokenNew = accessTokenNew;
       } else {
-        window.location = "/login";
+        // window.location = "/login";
       }
     }
 
