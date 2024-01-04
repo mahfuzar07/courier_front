@@ -16,6 +16,9 @@
 @import './home/testimonials-section';
 @import './home/faq-section';
 @import './home/blog-section';
+// pages
+@import './pages/auth';
+
 
 a,
 a:hover,
@@ -927,4 +930,11 @@ a {
 		text-decoration: none;
 		border: 2px solid transparent;
 	}
+}
+
+
+.flex_between{
+	display: flex;
+	align-items: center;
+	justify-content: space-between !important;
 }

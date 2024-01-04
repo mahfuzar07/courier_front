@@ -6,7 +6,6 @@ import TanentInfoService from '@/services/api/tanentInfo.service';
 import { useQuery } from '@tanstack/react-query';
 
 const DashboardPage = () => {
-
 	const { data: dashboardData } = useQuery({
 		queryKey: ['admindata'],
 		queryFn: TanentInfoService.getTanentAdminInfo(),
@@ -15,6 +14,7 @@ const DashboardPage = () => {
 		},
 	});
 
+	console.log('dashboardData', dashboardData);
 	return (
 		<div>
 			<div className="">
