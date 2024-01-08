@@ -52,11 +52,13 @@ const LoginPage = () => {
 								{
 									required: true,
 									type: 'email',
-									message: 'Please input your valid email!',
+									message: 'please input your valid email!',
 								},
 							]}
 						>
-							<Input placeholder="example@gmail.com" prefix={<MailOutlined className="site-form-item-icon" />} />
+							{/* <Input placeholder="example@gmail.com" prefix={<MailOutlined className="site-form-item-icon" />} /> */}
+
+							<Input placeholder="example@gmail.com" />
 						</Form.Item>
 
 						<Form.Item
@@ -69,10 +71,10 @@ const LoginPage = () => {
 								},
 							]}
 						>
-							<Input.Password prefix={<LockOutlined className="site-form-item-icon" />} placeholder="password12345" />
+							<Input.Password placeholder="Password12345" />
 						</Form.Item>
 
-						<div className="flex_between my-3">
+						<div className="forgot_section_wrapper">
 							<Form.Item
 								name="remember"
 								noStyle

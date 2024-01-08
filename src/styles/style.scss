@@ -900,7 +900,7 @@ a {
 	display: block;
 	font-size: 16px;
 	font-weight: 400;
-	padding: 5px 15px;
+	padding: 8px 15px;
 
 	border: 2px solid transparent;
 	&:hover {
@@ -912,7 +912,7 @@ a {
 
 .primary_button_border {
 	border: 2px solid $primary_button_bg;
-	padding: 5px 15px;
+	padding: 8px 15px;
 	text-align: center;
 	text-transform: capitalize;
 	transition: 0.5s;
