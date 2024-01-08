@@ -1,0 +1,48 @@
+.about_mission_section {
+	.about_mission_content {
+		margin-top: 50px;
+		display: flex;
+		align-items: flex-start;
+		gap: 20px;
+		.page_content_para {
+			flex: 3;
+		}
+
+		.about_mission_image_wrapper {
+			flex: 2;
+			padding: 10px;
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			z-index: 1;
+			&::before {
+				content: '';
+				position: absolute;
+				top: -6px;
+				right: -6px;
+				width: 40%;
+				height: 40%;
+				z-index: -1;
+				border-top: 10px solid #4770b3;
+				border-right: 10px solid #4770b3;
+				border-top-right-radius: 15px;
+				border-top-left-radius: 25px;
+				border-bottom-right-radius: 25px;
+			}
+
+			.circle_effect {
+				position: absolute;
+				content: '';
+				bottom: -40px;
+				left: -40px;
+				width: 100px;
+				border-radius: 50%;
+				aspect-ratio: 1/1;
+				background-color: rgba(55, 200, 220, 0.85);
+				z-index: -1;
+				filter: drop-shadow(1px 10px 10px rgb(48, 198, 218));
+			}
+		}
+	}
+}
