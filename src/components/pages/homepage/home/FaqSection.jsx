@@ -1,5 +1,6 @@
 import React from 'react';
 import FaqAccordion from '@/components/common/home-page/FaqAccordion';
+import SectionTitle from '@/components/common/title/SectionTitle';
 
 const FaqSection = () => {
 	const sections = [
@@ -27,7 +28,8 @@ const FaqSection = () => {
 	];
 	return (
 		<div className="faq_section_wrapper">
-			<h1 className="section_title">Frequently Asked Questions</h1>
+
+			<SectionTitle title="Frequently Asked" strong="Questions" />
 			<div className="container">
 				<div className="faq_section">
 					<FaqAccordion sections={sections} />

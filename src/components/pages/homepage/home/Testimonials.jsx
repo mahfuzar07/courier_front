@@ -1,11 +1,12 @@
 'use client';
 import React, { useEffect, useState } from 'react';
-import Image from "next/legacy/image";
+import Image from 'next/legacy/image';
 import 'swiper/scss';
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 import { Pagination, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SectionTitle from '@/components/common/title/SectionTitle';
 
 function Testimonials() {
 	// const [testimonialData, setTestimonialData] = useState();
@@ -63,7 +64,8 @@ function Testimonials() {
 
 	return (
 		<div className="testimonials_section_wrapper">
-			<h1 className="section_title">What Our Client Say</h1>
+			<SectionTitle title="What Our Client" strong="Say" />
+
 			<div className="container">
 				<div className="testimonials_slider_wrapper">
 					<Swiper

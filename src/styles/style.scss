@@ -19,7 +19,6 @@
 // pages
 @import './pages/auth';
 
-
 a,
 a:hover,
 a:focus,
@@ -122,15 +121,22 @@ a {
 .page_main_content_wrapepr {
 	margin-top: 50px;
 }
-.section_title {
-	margin: 0;
-	font-size: 46px;
-	font-family: 'Prosto One', sans-serif;
-	text-align: center;
-	font-weight: 400;
-	max-width: 800px;
-	padding: 0 10px;
-	margin: auto;
+.section_title_wrapper {
+	.section_title {
+		margin: 0;
+		font-size: 46px;
+		font-family: 'Prosto One', sans-serif;
+		text-align: center;
+		font-weight: 400;
+		max-width: 800px;
+		padding: 0 10px;
+		margin: auto;
+		strong {
+			font-weight: inherit;
+			font-size: inherit;
+			color: $primary_button_bg;
+		}
+	}
 }
 
 .common-button {
@@ -887,6 +893,43 @@ a {
 	max-width: 1200px;
 	width: 100%;
 }
+.page_content_wrapper {
+	margin-top: 65px;
+}
+.page_top_title_section {
+	background-color: $primary_color;
+	min-height: 40vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	z-index: 1;
+	&::before {
+		z-index: -1;
+		position: absolute;
+		content: '';
+		left: 0px;
+		top: 0px;
+		width: 100%;
+		height: 100%;
+		background-image: url('/assets/page-top-bg.png');
+		background-repeat: no-repeat;
+		background-position: left;
+		background-size: contain;
+	}
+
+	.page_top_title {
+		color: white;
+		font-size: 48px;
+		font-family: 'Prosto One', sans-serif;
+
+		strong {
+			font-weight: inherit;
+			font-size: inherit;
+			color: $primary_button_bg;
+		}
+	}
+}
 
 .primary_button {
 	background-image: $gradient_primary_button;
@@ -932,8 +975,7 @@ a {
 	}
 }
 
-
-.flex_between{
+.flex_between {
 	display: flex;
 	align-items: center;
 	justify-content: space-between !important;

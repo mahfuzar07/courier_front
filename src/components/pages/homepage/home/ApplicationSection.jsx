@@ -1,5 +1,6 @@
 'use client';
-import Image from "next/legacy/image";
+import SectionTitle from '@/components/common/title/SectionTitle';
+import Image from 'next/legacy/image';
 import { useEffect, useState } from 'react';
 
 function ApplicationSection() {
@@ -26,7 +27,7 @@ function ApplicationSection() {
 	return (
 		<div className="application_section_wrapper">
 			<div className="application_section">
-				<h1 className="section_title">Delivery Business Interface</h1>
+				<SectionTitle title="Delivery Business" strong="Interface" />
 				<div className="container">
 					<div className="application_tab">
 						<div className="tab_item">

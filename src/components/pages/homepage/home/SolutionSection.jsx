@@ -1,4 +1,5 @@
-import Image from "next/legacy/image";
+import SectionTitle from '@/components/common/title/SectionTitle';
+import Image from 'next/legacy/image';
 
 function SolutionSection() {
 	const solutionItem = [
@@ -30,7 +31,8 @@ function SolutionSection() {
 
 	return (
 		<div className="solution_section_wrapper">
-			<h1 className="section_title">Solution for every delivery</h1>
+			<SectionTitle title="Solution for every" strong="delivery" />
+
 			<div className="solution_section">
 				<div className="container">
 					<div className="solution_item_wrapper">

@@ -1,4 +1,5 @@
-import Image from "next/image";
+import SectionTitle from '@/components/common/title/SectionTitle';
+import Image from 'next/image';
 
 function DeliveryProcess() {
 	const deliveryProcessItem = [
@@ -21,9 +22,7 @@ function DeliveryProcess() {
 
 	return (
 		<div className="delivery_process_section_wrapper">
-			<h1 className="section_title">
-				All in one proof for <br /> final mile delivery solution
-			</h1>
+			<SectionTitle title="All in one proof for final mile delivery" strong="solution" />
 			<div className="container">
 				<div className="delivery_process_section">
 					<div className="delivery_process_item_wrapper">

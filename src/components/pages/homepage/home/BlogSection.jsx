@@ -4,6 +4,7 @@ import Link from 'next/link';
 import blogImage_1 from '@/public/assets/blog/blog-1.png';
 import blogImage_2 from '@/public/assets/blog/blog-2.png';
 import blogImage_3 from '@/public/assets/blog/blog-3.png';
+import SectionTitle from '@/components/common/title/SectionTitle';
 
 function BlogSection() {
 	const blogItem = [
@@ -31,7 +32,8 @@ function BlogSection() {
 	];
 	return (
 		<div className="blog_section_wrapper">
-			<h1 className="section_title">Get Our Latest Blogs </h1>
+
+			<SectionTitle title="Get Our Latest" strong="Blogs" />
 			<div className="container">
 				<div className="blog_section">
 					<div className="home_blog_card_item_wrapper">
