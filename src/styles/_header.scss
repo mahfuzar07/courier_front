@@ -10,7 +10,6 @@
 	box-shadow: rgba(209, 209, 214, 0.2) 0px 7px 35px 0px;
 	color: $primary_color;
 
-
 	&.visible {
 		transform: translateY(0, 0, 0);
 		transition: all ease 0.7s;
@@ -153,7 +152,7 @@
 		max-width: 250px;
 		position: relative;
 		width: 100%;
-		height: 30px;
+		height: 50px;
 	}
 	.header_navbar_link,
 	.header_auth_button_wrapper {
@@ -179,12 +178,14 @@
 	.responsive_nav_wrapper .nav_menu_wrapper {
 		position: fixed;
 		left: 0;
-		top: 50px;
+		top: 70px;
+
 		backdrop-filter: blur(7px);
 		min-width: 100%;
-		min-height: 100vh;
+		min-height: calc(100vh - 70px);
 		transform: translateX(100%);
 		transition: all ease 0.5s;
+
 	}
 
 	.responsive_nav_wrapper .nav_menu_wrapper_fold {
@@ -204,7 +205,8 @@
 		justify-content: flex-start;
 		background-color: transparent;
 		margin-left: auto;
-		padding: 5px 10px;
+		padding: 10px;
+
 		.nav_menu_item {
 			padding: 10px;
 

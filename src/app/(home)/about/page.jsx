@@ -35,7 +35,7 @@ const AboutPage = () => {
 							</p>
 							<div className="about_mission_image_wrapper">
 								<div className="circle_effect"></div>
-								<Image src={MissionImage} alt="about-image" height={400} />
+								<Image placeholder="blur" quality={100} src={MissionImage} alt="about-image" height={400} />
 							</div>
 						</div>
 					</div>

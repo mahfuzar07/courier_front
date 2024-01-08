@@ -19,7 +19,7 @@ const ContactPage = () => {
 						<div className="contact_image_wrapper">
 							<div className="image_circle">
 								<div className="contact_image">
-									<Image src={ContactImage} alt="contact-image" />
+									<Image quality={100} src={ContactImage} alt="contact-image" />
 								</div>
 							</div>
 						</div>
