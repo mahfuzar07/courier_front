@@ -121,8 +121,6 @@ a {
 
 /* CSS START */
 
-
-
 .common-button {
 	padding: 6px 30px;
 	border: none;
@@ -870,9 +868,6 @@ a {
 	}
 }
 
-
-
-
 .primary_button {
 	background-image: $gradient_primary_button;
 	cursor: pointer;
@@ -921,4 +916,15 @@ a {
 	display: flex;
 	align-items: center;
 	justify-content: space-between !important;
+}
+// global loading page
+.loading_page_wrapper {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: $primary_color;
+	.loading_image {
+	}
 }
