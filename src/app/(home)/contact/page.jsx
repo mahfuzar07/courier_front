@@ -2,6 +2,7 @@ import ContentTitle from '@/components/common/title/ContentTitle';
 import React from 'react';
 import Image from 'next/image';
 import ContactImage from '@/public/assets/contact/contact-image-1.png';
+import ContactForm from '@/components/common/form/ContactForm';
 
 const ContactPage = () => {
 	return (
@@ -10,14 +11,21 @@ const ContactPage = () => {
 				<h1 className="page_top_title">
 					Contact <strong>Us</strong>
 				</h1>
+				<p className="page_top_subtitle">We're always happy to help! You are welcome to message us at any time.</p>
 			</div>
 			<div className="container">
 				<div className="page_content">
 					<div className="contact_section_wrapper">
 						<div className="contact_image_wrapper">
-							<Image src={ContactImage} alt="contact-image" height={400} />
+							<div className="image_circle">
+								<div className="contact_image">
+									<Image src={ContactImage} alt="contact-image" />
+								</div>
+							</div>
 						</div>
-						<div className="contact_form_wrapper"></div>
+						<div className="contact_form_wrapper">
+							<ContactForm />
+						</div>
 					</div>
 				</div>
 			</div>

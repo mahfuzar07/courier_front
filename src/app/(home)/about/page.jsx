@@ -8,9 +8,8 @@ const AboutPage = () => {
 		<div className="page_content_wrapper">
 			<div className="page_top_title_section">
 				<h1 className="page_top_title">
-					Contact <strong>Us</strong>
+					About <strong>Us</strong>
 				</h1>
-				<p className="page_top_subtitle">We're always happy to help! You are welcome to message us at any time.</p>
 			</div>
 			<div className="container">
 				<div className="page_content">
