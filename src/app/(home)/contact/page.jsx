@@ -74,7 +74,7 @@ const ContactPage = () => {
 								<div className="live_contact_card">
 									<h1>Got Question?</h1>
 
-									<Image quality={100} src="/assets/contact/whatsapp-gif.gif" alt="contact-icon" width={80} height={80} />
+									<Image quality={100} src="/assets/contact/whatsapp-gif.gif" alt="contact-icon" width={70} height={70} />
 
 									<button className="live_contact_button">Message us on WhatsApp</button>
 									<p>We are here to help you!</p>
