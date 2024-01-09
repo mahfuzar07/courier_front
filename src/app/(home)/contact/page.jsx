@@ -29,7 +29,7 @@ const ContactPage = () => {
 				<h1 className="page_top_title">
 					Contact <strong>Us</strong>
 				</h1>
-				<p className="page_top_subtitle">We're always happy to help! You are welcome to message us at any time.</p>
+				<p className="page_top_subtitle">We&apos;re always happy to help! You are welcome to message us at any time.</p>
 			</div>
 
 			<div className="page_content">
@@ -57,20 +57,29 @@ const ContactPage = () => {
 							<div className="contact_address">
 								<div className="address_top">
 									<h1>Corporate Address</h1>
-									<p>Here’s how you can contact us, depending on your needs.</p>
+									<p>Here&apos;s how you can contact us, depending on your needs.</p>
 								</div>
 								<div className="address_item_wrapper">
 									{contactItems?.map((item, index) => (
 										<div key={index} className="address_item">
 											<div className="item_icon">
-												<Image quality={100} src={item.icon} alt="contact-icon" width={20} height={20}/>
+												<Image quality={100} src={item.icon} alt="contact-icon" width={20} height={20} />
 											</div>
 											<p className="item_title">{item.title}</p>
 										</div>
 									))}
 								</div>
 							</div>
-							<div className="live_contact_section">live section</div>
+							<div className="live_contact_section">
+								<div className="live_contact_card">
+									<h1>Got Question?</h1>
+
+									<Image quality={100} src="/assets/contact/whatsapp-gif.gif" alt="contact-icon" width={80} height={80} />
+
+									<button className="live_contact_button">Message us on WhatsApp</button>
+									<p>We are here to help you!</p>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
