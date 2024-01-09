@@ -43,16 +43,17 @@ const Header = () => {
 			title: 'Home',
 		},
 		{
+			link: '/solution',
+			title: 'Solution',
+			// submenu: sortedFeatures,
+			activeURL: '/solution',
+		},
+		{
 			link: '/price',
 			title: 'Pricing',
 			activeURL: '/price',
 		},
-		{
-			link: '/features',
-			title: 'Features',
-			// submenu: sortedFeatures,
-			activeURL: '/features',
-		},
+
 		{
 			link: '/blog',
 			title: 'Blog',
@@ -99,12 +100,12 @@ const Header = () => {
 						<ul className="nav-menu-ul">
 							{navItem.map((item, index) => (
 								<li className="nav_menu_item" key={index}>
-									{item.link === '/features' ? (
+									{item.link === '/solution' ? (
 										<>
 											<span
 												className={`custom_menu_link ${pathname === item.activeURL ? 'active' : ''}`}
 												href={item.link}
-												onClick={() => handleMenuItemClick(`/features}`)}
+												onClick={() => handleMenuItemClick(`/solution}`)}
 											>
 												{item.title}
 											</span>
@@ -182,10 +183,7 @@ const Header = () => {
 												{item.title}
 											</span>
 										) : (
-											<span
-												className={`custom_menu_link ${pathname == item.link ? 'active' : ''}`}
-												onClick={() => handleMenuItemClick(item.link)}
-											>
+											<span className={`custom_menu_link ${pathname == item.link ? 'active' : ''}`} onClick={() => handleMenuItemClick(item.link)}>
 												{item.title}
 											</span>
 										)}
