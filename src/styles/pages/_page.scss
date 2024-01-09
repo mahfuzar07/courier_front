@@ -39,14 +39,15 @@
 	}
 }
 .page_top_title_section {
+	padding: 50px 0;
 	background-color: $primary_color;
 	min-height: 45vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
+	justify-content: flex-start;
 	position: relative;
-
+	z-index: -1;
 	&::before {
 		position: absolute;
 		content: '';
@@ -154,6 +155,7 @@
 			color: white;
 			font-size: 32px;
 			font-family: 'Prosto One', sans-serif;
+			text-align: center;
 
 			strong {
 				font-weight: inherit;
