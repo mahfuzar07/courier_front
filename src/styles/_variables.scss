@@ -14,12 +14,21 @@ $price-title-color: #164b77;
 $primary-color: #78f3f3;
 $secondary-color: #b1edff;
 
+// primary theme
 $primary_color: #5d3ebd;
-// $primary_color: #6c418f;
 $primary_button_bg: #fd9010;
 $secondary_button_bg: #f3b415;
 $bacground_color: #fcfcfc;
 $gradient_primary_button: linear-gradient(to right, $primary_button_bg 0%, $secondary_button_bg 51%, $primary_button_bg 100%);
-
 $title_color: #282727;
 $subtext_color: #898181;
+
+// secondary theme
+
+// $primary_color: #1d1393;
+// $primary_button_bg: #1d1393;
+// $secondary_button_bg: #a750aa;
+// $bacground_color: #fcfcfc;
+// $gradient_primary_button: linear-gradient(to right, $primary_button_bg 0%, $secondary_button_bg 51%, $primary_button_bg 100%);
+// $title_color: #282727;
+// $subtext_color: #898181;
