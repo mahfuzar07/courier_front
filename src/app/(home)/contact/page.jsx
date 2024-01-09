@@ -1,9 +1,9 @@
 import ContentTitle from '@/components/common/title/ContentTitle';
-import React from 'react';
 import Image from 'next/image';
 import ContactImage from '@/public/assets/contact/contact-image-1.png';
 import ContactForm from '@/components/common/form/ContactForm';
 
+// image
 import locationIcon from '@/public/assets/contact/icon/location.png';
 import emailIcon from '@/public/assets/contact/icon/email.png';
 import phoneIcon from '@/public/assets/contact/icon/phone.png';
